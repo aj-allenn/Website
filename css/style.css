@@ -7,10 +7,11 @@
 header{
     width: 100%;
     height: 80px;
-    background: linear-gradient(90deg, #37bcfa,#84e0dc);
+    background: linear-gradient(#9d5ce3,#ba5dcd);
     display: flex;
-    gap: 260px;  
-    padding: 0 20px;
+    justify-content: center;
+    gap: 20px;  
+    padding:2px;
 
 }
 
@@ -28,47 +29,93 @@ header{
     height: 40px;
     margin-top: 20px;
     display: flex;
+   border-radius: 10px;
 }
 .search input{
     width: 100%;
     height: 100%;
     border: none;
-    border-radius: 5px 0 0 5px;
-    padding-left: 10px;
+    /* border-radius:12px 0px 0px 0px; */
+    padding-left: 5px;
     font-size: 18px;
 }
+.search button{
+    background-color: white;
+    border: none;
+    /* border-top-right-radius: 12px 0px 0px 0px; */
+    /* border-bottom-right-radius: 12px; */
+}
+.icon{
+    width: 30px;
+    height: 30px;
+}
+.login{
+    width: 110px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9d5ce3;
+    border: 2px solid white;
+    margin-top: 20px;
+    border-radius: 10px;
+    gap: 10px;
+}
 
+.cart-img{
+     width: 110px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9d5ce3;
+    border: 2px solid white;
+    margin-top: 20px;
+    border-radius: 10px;
+    gap: 10px;
+}
 main{
    margin: auto;
-
-  
+   
 }
+
+#category{
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color:#ba5dcd;
+    color: black;
+    border: 2px solid rgb(245, 238, 238);
+}
+
 
 .cards{
     width: 100%;
-    background-color: #edf3f3;
+    background-color: #d3dbdb;
     margin: auto;
     display:grid;
-    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-template-columns: 230px 230px 230px 230px 230px;
     justify-content: center;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
-    padding: 20px 0;    
+    padding: 20px;    
   
 }
 .card{
-    width: 200px;
+    width: 230px;
     height: 300px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
     text-align: center;
 }
 .card img{
     width: 100%;
-    height: 180px;
+    height: 190px;
     border-radius: 10px;
 }
 .card h2{
@@ -77,10 +124,20 @@ main{
 }
 .card p{
     font-size: 16px;
-    color: gray;
+    color: rgb(3, 89, 6);
 }       
 
 .card a{
     text-decoration: none;
     color: black;
+}
+
+.card:hover{
+    transform: scale(1.02);
+    transition: 0.3s ease linear;
+}
+
+#category:hover{
+    background-color: aliceblue;
+    color: rgb(23, 22, 22);
 }
